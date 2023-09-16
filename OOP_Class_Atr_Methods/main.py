@@ -20,11 +20,11 @@ oliynyk.Buy(iphone15price)
 
 for student in students:
     student.ShowInfo()
-
+'''
 days = 365
 for day in days:
     if(day > 358 and day < 7):
-
+'''
 
 
 
