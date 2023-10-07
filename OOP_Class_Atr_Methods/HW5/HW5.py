@@ -144,7 +144,7 @@ class Human:
 
     def spend_time_with_girlfriend(self):
         self.gladness += 50
-        self.money -= 30
+        self.money -= 620
         self.home.mess += 5
 
     def clean_home(self):
@@ -198,7 +198,7 @@ class Human:
             print('Got a job')
             self.get_job()
         self.days_indexes(day)
-        dice = random.randint(1, 4)
+        dice = random.randint(1, 5)
         if self.satiety < 20:
             print('I`ll go eat')
             self.eat()
@@ -219,6 +219,8 @@ class Human:
             self.clean_home()
         elif dice == 4:
             self.shopping(manage='sweets')
+        elif dice == 5:
+            self.spend_time_with_girlfriend()
         return True
 
 
