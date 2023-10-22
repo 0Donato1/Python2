@@ -1,10 +1,16 @@
 import requests
 from bs4 import BeautifulSoup
 
+#USD
 responsemin = requests.get("https://minfin.com.ua/ua/currency/usd/")
+
+#EUR
 responsefin = requests.get("https://finance.i.ua")
+
+#GBP
 responsekurs = requests.get("https://kurs.com.ua/ru/valyuta/gbp")
 
+#WEATHER
 responsedeg = requests.get("https://meteo.ua/ua/34/kiev#2023-10-21--15-00")
 
 time_or_currency = input(f"Choose what do you want to check \tcurrency, enter c  or \tweather, enter w: ")
